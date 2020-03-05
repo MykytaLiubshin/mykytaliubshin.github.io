@@ -1,0 +1,52 @@
+div {
+  transition-property: all;
+  
+}
+
+.wrap {
+  margin: 50px;
+}
+
+
+
+.container {
+  display: inline-block;
+  width: 150px;
+}
+
+h1 {
+  color: lightgray;
+  font-family: sans-serif;
+  text-align: center;
+}
+#triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+#triange-up:hover {
+  transform: rotate(45deg);
+  transition: all 3s;
+  animation-timing-function: cubic-bezier();
+}
+#triange-up-two{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+#triange-up-two:hover{
+  transform: rotate(45deg);
+  transition: all 3s;
+}
+.box {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #60D4C8;
+}
