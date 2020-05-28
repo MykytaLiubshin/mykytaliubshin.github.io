@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>NiketaScript</title>
+  </head>
+  <body>
+    <div id="nav_one"></div>
+    <div></div>
+    <div class="grid">
+      <div id="your_email" class="c2"></div>
+
+          <!-- TOP -->
+        <!-- Notation style : 
+          image id, src
+                class, events, styles-->
+                 <div class="overlapper c2 modal-backdrop" id="overlapper">
+          <div class="grid"> 
+          <img src="static/top_message.png"
+              class="top-message c2">
+              <p class="c2 red_small">
+                Thank you for downloading our template!
+              </p>
+              <p class="c2 grey-smaller ">
+                Hope you will enjoy it! Check also our site
+              </p>
+              <img src="static/button-red.png"
+              class="c2 red-button"
+              onclick="drop()">www.simu.co</button>
+
+            </div>
+        </div> 
+
+<!-- FORM BEGIN -->
+
+        <div class="overlapper modal-backdrop" id="overlapper-hider" style="display: none;"  >
+            <form name="emailform" id="overlapper-form">
+              <div class="grid"> 
+                <img src="static/top_message.png"
+              class="top-message c2">
+                <input type="text" class="form-control c2" placeholder="Input your email here to recieve further data"
+                aria-label="Emal" aria-describedby="basic-addon1">
+                <button type="button" type="submit" onclick="submForm()" class="c2 submit btn btn-success">Success</button>
+            </div>
+      </form>
+
+<!-- FORM END -->
+
+      <!-- TOP SLIDE -->
+      
+        </div>
+          <div class="d-flex justify-content-between c2 bright over" style="margin-left: 10vw;">
+            <img src="./static/top/intell.png" 
+              height="24" width="44" class="mx-5 my-5" >
+            <img src="./static/top/faun.png" 
+              height="34" width="72" class="mx-5 my-5" >
+            <img src="./static/top/search.png" 
+              height="33" width="33" class="mx-5 my-5">
+          </div>
+          <img src="static/top/text_1.png"
+            class="c2 central_text_image over bright opac_6">
+          <img src="static/top/3_bar.png"
+            class="c2 bar">
+          <p class="c2 over button-img bright_150" onclick="show()
+            "> view more </p>
+
+          <img  id="#top" src="static/top/photo.png"
+            class="c2 full bright opac_8">
+          <img src="static/top/bg2.png" 
+            class="c2 full bright opac_3">
+            
+
+          <!-- ABOUT US -->
+
+      <div class="c4" id="about_us">
+          <img src="static/about_us/bg.png">
+      </div>
+      <img src="static/about_us/text/abt.png"
+          class="c3 abt_text">
+      <img src="static/about_us/butt_onn.png"
+          class="c3 second_button" onclick="show()" over style="z-index: 3;">
+      <img src="static/about_us/photo.png"
+            class="c3 mt-40 that_guy_photo">
+
+
+          <!-- OUR NEW VID -->
+
+
+        <div id="nav_two" class="c5"></div>
+        <img id="our_new_vid"
+            src="static/our_new_vid/new_vid_top.png"
+            class="tp c5"  >
+        <img src="static/our_new_vid/player.png"
+            class="c5 player">
+        <p class="c5 new_vid_text over">
+          <b> OUR NEWEST VIDEO </b>
+        </p>
+        <p class="c5 lower_paragraph over">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in augue interdum risus fermentum facilisis. Donec nec sodales mi. 
+        </p>
+        <div class="flex c5 four_images dark">
+          <img src="static/our_new_vid/1.png" class="small_square_image c5" >
+          <img src="static/our_new_vid/2.png" class="small_square_image c5" >
+          <img src="static/our_new_vid/3.png" class="small_square_image c5" >
+          <img src="static/our_new_vid/4.png" class="small_square_image c5" >
+        </div>
+
+
+          <!-- BOTTOM -->
+
+        <img id="bottom" src="static/bottom/bottom_photo.png"
+            class="bottom_top c6" >
+        <img src="static/bottom/footer.png"
+            class="footer c6" >
+        <p class="c6 over bottom_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in augue interdum risus fermentum facilisis. Donec nec sodales mi. 
+        </p>
+        <img src="static/bottom/want_to_hire.png"
+            class="c6 want_to_hire"    
+            >
+        <img src="static/bottom/contact_with.png"
+            class="c6 button_bottom over"
+            onclick="show()">
+            
+      </div>
+    </div>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
