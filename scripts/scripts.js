@@ -3,6 +3,8 @@ const ids = [
     "nav_two"
 ]
 var myStorage = window.localStorage;
+const get_email = () => localStorage.getItem("email") == "undefined" || 
+localStorage.getItem("email") == null ? "" : localStorage.getItem("email")
 if (localStorage.getItem("email") == "undefined")
 {
     localStorage.setItem("email", "")
@@ -32,8 +34,6 @@ const get_navbar = ( active ) => `
 const set_nav = (active, id) => {
     try{document.querySelector('#'+id).innerHTML = get_navbar(active+1);}catch(error) {}
 }
-set_nav( 0, ids[0] )
-set_nav( 2, ids[1] )
 
 const show = () => 
 {
@@ -49,6 +49,16 @@ const submForm = () =>
     localStorage.setItem("email", x[0]);
     document.getElementById("overlapper-hider").style = "display: none;";
     your_email();
+    set_local_input();
 }
 
 const drop = () => document.getElementById("overlapper").style="display: none;";
+
+const set_local_input = () => {
+    console.log("DONE");
+    document.getElementById("inputter").value = get_email();
+}
+
+set_nav( 0, ids[0] )
+set_nav( 2, ids[1] )
+set_local_input()
