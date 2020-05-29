@@ -263,7 +263,7 @@ a
 }
 .top-message
 {
-    margin-left: 5vw;
+    margin-left: 3vw;
 }
 .modal-backdrop {
     background-color:rgba(51, 51, 51, 0.8);
@@ -310,4 +310,8 @@ a
 .over
 {
     z-index: 1;
+}
+.inputter
+{
+    margin-left: auto;
 }
